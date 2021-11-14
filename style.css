@@ -16,6 +16,24 @@ h1 {
   text-shadow: 3px 0 #04dacf;
 }
 
+h3{
+  font-size: 4.5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #04dacf;
+}
+
+.player{
+    display: inline;
+    position: relative;
+    right: 3em;
+}
+.computer{
+    display: inline;
+    position: relative;
+    left: 3em;
+}
+
 footer {
   color: #dbedf3;
   font-family: sans-serif;
