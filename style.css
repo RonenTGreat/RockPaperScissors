@@ -23,6 +23,14 @@ h3{
   text-shadow: 3px 0 #04dacf;
 }
 
+h4{
+  font-size: 3rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #04dacf;
+  margin: 0;
+}
+
 .player{
     display: inline;
     position: relative;
@@ -33,6 +41,7 @@ h3{
     position: relative;
     left: 3em;
 }
+
 
 footer {
   color: #dbedf3;
@@ -54,7 +63,7 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  margin: -2 auto;
 }
 
 .hand {
@@ -73,4 +82,9 @@ footer {
   text-align: center;
   margin: 50px;
   background-color: white;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
 }
