@@ -1,49 +1,53 @@
-body{
-    text-align: center;
-    background-color: #283149;
+body {
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(55, 105, 150, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-h1{
-    font-size: 4.5rem;
-    color: #DBEDF3;
-    font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #04dacf;
+h1 {
+  font-size: 4.5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #04dacf;
 }
 
-footer{
-    color: #DBEDF3;
-    font-family: sans-serif;
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
 }
 
-.r{
-    background-image: url("/images/rock.png");
-    background-repeat: no-repeat;
+.r {
+  background-image: url("/images/rock.png");
+  background-repeat: no-repeat;
 }
 
-.p{
-    background-image: url("/images/paper.png");
-    background-repeat: no-repeat;
-
+.p {
+  background-image: url("/images/paper.png");
+  background-repeat: no-repeat;
 }
-.s{
-    background-image: url("/images/scissors.png");
-    background-repeat: no-repeat;
-
+.s {
+  background-image: url("/images/scissors.png");
+  background-repeat: no-repeat;
 }
 
-.set{
-    margin: 10% auto;
+.set {
+  margin: 10% auto;
 }
 
-.hand{
-outline: none;
-  border: 10px solid #404B69;
+.hand {
+  outline: none;
+  border: 10px solid #404b69;
   font-size: 5rem;
-  font-family: 'Arvo', cursive;
+  font-family: "Arvo", cursive;
   line-height: 2;
   font-weight: 900;
   color: #04dacf;
-  text-shadow: 3px 0 #DBEDF3;
+  text-shadow: 3px 0 #dbedf3;
   border-radius: 15px;
   display: inline-block;
   width: 150px;
