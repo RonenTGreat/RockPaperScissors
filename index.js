@@ -18,6 +18,7 @@ var rock = document.querySelector(".rock");
 rock.addEventListener("click", function () {
   var playerChoice = "rock";
   if (computerChoice === playerChoice) {
+    document.querySelector(".computerHand").innerHTML = computerChoice;
     document.querySelector(".state").innerHTML = "It's a Tie! 😑";
     generate();
   } else if (playerChoice === "rock") {
@@ -42,6 +43,8 @@ var paper = document.querySelector(".paper");
 paper.addEventListener("click", function () {
   var playerChoice = "paper";
   if (computerChoice === playerChoice) {
+    document.querySelector(".computerHand").innerHTML = computerChoice;
+
     document.querySelector(".state").innerHTML = "It's a Tie! 😑";
 
     generate();
@@ -68,6 +71,8 @@ var scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", function () {
   var playerChoice = "scissors";
   if (computerChoice === playerChoice) {
+    document.querySelector(".computerHand").innerHTML = computerChoice;
+
     document.querySelector(".state").innerHTML = "It's a Tie! 😑";
     generate();
   } else if (playerChoice === "scissors") {
