@@ -29,17 +29,20 @@ h4{
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #04dacf;
   margin: 0;
+  position: relative;
 }
 
 .player{
     display: inline;
     position: relative;
     right: 3em;
+    bottom: .5em;
 }
 .computer{
     display: inline;
     position: relative;
     left: 3em;
+    bottom: .5em;
 }
 
 
@@ -80,7 +83,7 @@ footer {
   width: 150px;
   height: 150px;
   text-align: center;
-  margin: 50px;
+  margin: 40px;
   background-color: white;
 }
 

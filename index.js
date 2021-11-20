@@ -6,7 +6,10 @@ var PlayerScore = 0;
 document.querySelector(".computer-score").innerHTML = ComputerScore;
 document.querySelector(".player-score").innerHTML = PlayerScore;
 
-
+function generate() {
+  randomNumber = Math.floor(Math.random() * 3);
+  computerChoice = hands[randomNumber];
+}
 
 console.log(computerChoice);
 
@@ -15,20 +18,21 @@ var rock = document.querySelector(".rock");
 rock.addEventListener("click", function () {
   var playerChoice = "rock";
   if (computerChoice === playerChoice) {
-    alert("It a tie");
+    document.querySelector(".state").innerHTML = "It's a Tie! 😑";
+    generate();
   } else if (playerChoice === "rock") {
     if (computerChoice === "paper") {
-      alert("Your lose");
+      document.querySelector(".state").innerHTML = "You Lose! 😢";
       ComputerScore++;
       document.querySelector(".computer-score").innerHTML = ComputerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
+      generate();
     } else {
-      alert("You win");
-        PlayerScore++;
+      document.querySelector(".state").innerHTML = "You Win! 🤩";
+      PlayerScore++;
       document.querySelector(".player-score").innerHTML = PlayerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
+      generate();
     }
   }
 });
@@ -38,22 +42,23 @@ var paper = document.querySelector(".paper");
 paper.addEventListener("click", function () {
   var playerChoice = "paper";
   if (computerChoice === playerChoice) {
-    alert("It a tie");
+    document.querySelector(".state").innerHTML = "It's a Tie! 😑";
+
+    generate();
   } else if (playerChoice === "paper") {
     if (computerChoice === "scissors") {
-      alert("Your lose");
+      document.querySelector(".state").innerHTML = "You Lose! 😢";
+
       ComputerScore++;
       document.querySelector(".computer-score").innerHTML = ComputerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
-
+      generate();
     } else {
-      alert("You win");
-      PlayerScore++
+      document.querySelector(".state").innerHTML = "You Win! 🤩";
+      PlayerScore++;
       document.querySelector(".player-score").innerHTML = PlayerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
-
+      generate();
     }
   }
 });
@@ -63,21 +68,21 @@ var scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", function () {
   var playerChoice = "scissors";
   if (computerChoice === playerChoice) {
-    alert("It a tie");
+    document.querySelector(".state").innerHTML = "It's a Tie! 😑";
+    generate();
   } else if (playerChoice === "scissors") {
     if (computerChoice === "rock") {
-      alert("Your lose");
+      document.querySelector(".state").innerHTML = "You Lose! 😢";
       ComputerScore++;
       document.querySelector(".computer-score").innerHTML = ComputerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
-
+      generate();
     } else {
-      alert("You win");
+      document.querySelector(".state").innerHTML = "You Win! 🤩";
       PlayerScore++;
       document.querySelector(".player-score").innerHTML = PlayerScore;
       document.querySelector(".computerHand").innerHTML = computerChoice;
-
+      generate();
     }
   }
 });
