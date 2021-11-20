@@ -17,7 +17,7 @@ h1 {
 }
 
 h3{
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #dbedf3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #04dacf;
@@ -87,7 +87,25 @@ footer {
   background-color: white;
 }
 
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
+@media (max-width: 1207px){
+  body{
+    background: #1F1D36;
+    font-size: 2rem;
+
+  }
+
+  .player{
+    display: block;
+    position: relative;
+    left: 1em;
+    bottom: 3px;
+    font-size: 40px;
+  }
+  .computer{
+    display: block;
+    position: relative;
+    left: 1em;
+    bottom: 1em;
+    font-size: 40px;
+  }
 }
